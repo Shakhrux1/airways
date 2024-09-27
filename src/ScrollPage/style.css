@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.hero .flip-element {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+.hero .flip-element video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+h2 {
+  height: 100rem;
+}
+
+.resizeMe2 {
+  transition: all 0.5s ease; /* Animatsiya davomida mulklarni o'zgartirish */
+}/*# sourceMappingURL=style.css.map */

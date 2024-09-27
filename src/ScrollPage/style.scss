@@ -1,0 +1,64 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+// .scrolBox {
+//   position: sticky;
+//   top: 0; // Element qayerda yopishib qolishini belgilaydi (yuqorida qoladi)
+//   z-index: 10; // Element ustunligini ta'minlash uchun kerak, boshqa elementlar ustidan ko'rinishi uchun
+//   background-color: white; // Backdropni ifodalash uchun
+//   padding: 20px;
+// }
+
+  .hero {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    .flip-element {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 2;
+      video{
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        z-index: -1; 
+      
+      }
+    }
+  }
+
+h2{
+  height: 100rem;
+}
+
+
+
+.resizeMe2 {
+ 
+  transition: all 0.5s ease; /* Animatsiya davomida mulklarni o'zgartirish */
+}

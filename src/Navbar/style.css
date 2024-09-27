@@ -1,0 +1,44 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+nav .container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+nav .container ul li {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+nav .container ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav .container button {
+  padding: 15px 50px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+nav .container button:hover {
+  background-color: #555;
+}/*# sourceMappingURL=style.css.map */
