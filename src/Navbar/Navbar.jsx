@@ -1,6 +1,6 @@
 import "./style.css";
 import logo from "../icon/photo_2024-09-20_21-43-40.jpg";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
@@ -8,9 +8,9 @@ export default function Navbar() {
         <div className="nav-bgcround">
           <nav>
             <div className="container">
-              <img src={logo} alt="" style={{ width: "200px" }} />
+             <Link to='/' > <img src={logo} alt="" style={{ width: "200px" }} /></Link>
               <ul>
-                <li>home</li>
+                <Link to='/home' ><li>home</li></Link>
                 <li>about</li>
                 <li>info</li>
                 <li>register</li>
@@ -24,7 +24,9 @@ export default function Navbar() {
       <header>
         <Outlet />
       </header>
-      <footer></footer>
+      <footer>
+        
+      </footer>
     </>
   );
 }

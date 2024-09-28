@@ -4,7 +4,6 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
 }
 nav .container {
@@ -21,15 +20,24 @@ nav .container ul {
   gap: 50px;
   margin: 0;
   padding: 0;
+  transition: all 0.3s;
 }
-nav .container ul li {
+nav .container ul a {
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
   font-size: 18px;
+  color: #000;
+}
+nav .container ul a:hover {
+  color: rgb(18, 118, 190);
+}
+nav .container ul a li {
+  padding: 0;
   text-transform: uppercase;
 }
-nav .container ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+nav .container ul:hover a:not(:hover) {
+  color: #a7a7a7;
 }
 nav .container button {
   padding: 15px 50px;

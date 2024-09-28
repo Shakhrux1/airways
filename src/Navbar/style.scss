@@ -2,15 +2,14 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; // Full width of the screen
-    z-index: 999; // Make sure it's above the video
-    background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background for visibility
-    padding: 10px 0; // Add vertical padding
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
 
     .container {
-        max-width: 1450px; // Limit content width
-        margin: 0 auto; // Center the container
-        padding: 0 20px; // Optional: Add padding for spacing on the sides
+        max-width: 1450px;
+        margin: 0 auto; 
+        padding: 0 20px; 
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,17 +20,27 @@ nav {
             gap: 50px;
             margin: 0;
             padding: 0;
-
-            li {
+            transition: all .3s;
+            a{
+                text-decoration: none;
+                transition: all .3s;
+                cursor: pointer;
                 font-size: 18px;
-                text-transform: uppercase;
-
-                a {
-                    text-decoration: none;
-                    color: white; // Ensure contrast with video
-                    font-weight: bold;
+                color:#000;
+                &:hover {
+                    color:  rgb(18, 118, 190);
+                }  
+                li {
+                    
+                    padding: 0;
+                    text-transform: uppercase;
+                    
                 }
             }
+            &:hover a:not(:hover){
+                color: #a7a7a7;
+            }
+
         }
 
         button {
